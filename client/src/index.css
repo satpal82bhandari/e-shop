@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-button {
+background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.custom-button button {
+  background-color: #04AA6D; /* Green */
+  color: white;
+  border: none;
+}
+
+.custom-button button:hover {
+  background-color: white; /* Green */
+  color: black;
+  border: none;
+}
