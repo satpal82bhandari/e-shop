@@ -40,10 +40,6 @@ const loginUser = async (req, res) => {
   });
 };
 
-
-
-
-
 // verify password reset token
 const verifyResetToken = async (req, res) => {
   const { token, email } = req.body;
@@ -74,8 +70,6 @@ const refreshToken = async (req, res) => {
   });
   res.json(tokens);
 };
-
-
 
 module.exports = {
   createAccount,

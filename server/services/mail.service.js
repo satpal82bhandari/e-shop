@@ -81,8 +81,8 @@ const forgotPasswordMail = async (token, email) => {
         <p>To reset your password, please click the link below.
           <a 
             href="${url}/reset-password?token=${encodeURIComponent(
-        token
-      )}&email=${email}"
+              token
+            )}&email=${email}"
           >
           <br/>
           Reset Password
@@ -99,8 +99,6 @@ const forgotPasswordMail = async (token, email) => {
     throw new ErrorHandler(500, error.message);
   }
 };
-
-
 
 module.exports = {
   signupMail,

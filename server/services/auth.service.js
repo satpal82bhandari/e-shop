@@ -1,24 +1,24 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const {
-  setTokenStatusDb,
-  createResetTokenDb,
+  // setTokenStatusDb,
+  // createResetTokenDb,
   deleteResetTokenDb,
   isValidTokenDb,
 } = require("../db/auth.db");
 const validateUser = require("../helpers/validateUser");
 const { ErrorHandler } = require("../helpers/error");
-const { changeUserPasswordDb } = require("../db/user.db");
+// const { changeUserPasswordDb } = require("../db/user.db");
 const {
   getUserByEmailDb,
   getUserByUsernameDb,
   createUserDb,
-  createUserGoogleDb,
+  // createUserGoogleDb,
 } = require("../db/user.db");
 const { createCartDb } = require("../db/cart.db");
-const mail = require("./mail.service");
+// const mail = require("./mail.service");
 const { OAuth2Client } = require("google-auth-library");
-const crypto = require("crypto");
+// const crypto = require("crypto");
 const moment = require("moment");
 const { logger } = require("../utils/logger");
 let curDate = moment().format();
@@ -131,8 +131,6 @@ class AuthService {
     }
   }
 
-
-
   async generateRefreshToken(data) {
     const payload = await this.verifyRefreshToken(data);
 
@@ -144,8 +142,6 @@ class AuthService {
       refreshToken,
     };
   }
-
- 
 
   async verifyResetToken(token, email) {
     try {
@@ -161,7 +157,6 @@ class AuthService {
       throw new ErrorHandler(error.statusCode, error.message);
     }
   }
-
 
   async verifyGoogleIdToken(code) {
     // https://github.com/MomenSherif/react-oauth/issues/12#issuecomment-1131408898

@@ -10,13 +10,14 @@ const {
 const { ErrorHandler } = require("../helpers/error");
 
 class CartService {
-  createCart = async (userId) => {
+  createCart = async function(userId) {
     try {
       return await createCartDb(userId);
     } catch (error) {
       throw new ErrorHandler(error.statusCode, error.message);
     }
   };
+  
   getCart = async (userId) => {
     try {
       return await getCartDb(userId);
