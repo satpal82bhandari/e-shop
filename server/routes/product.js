@@ -2,10 +2,10 @@ const router = require("express").Router();
 const {
   getAllProducts,
   createProduct,
-  getProduct,
+  // getProduct,
   updateProduct,
   deleteProduct,
-  getProductByName,
+  // getProductByName,
   getProductReviews,
   createProductReview,
   updateProductReview,

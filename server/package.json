@@ -21,7 +21,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "proxy": "http://194.238.17.222:9000",
   "dependencies": {
+    "@babel/eslint-parser": "^7.25.7",
     "bcrypt": "^5.1.1",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
@@ -43,11 +45,13 @@
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.1",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.9.1",
-    "eslint-plugin-babel": "^5.3.1",
+    "eslint": "^9.11.1",
     "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.10.0",
     "nodemon": "^3.1.4",
     "pino-pretty": "^11.2.2",
     "prettier": "^3.3.3",

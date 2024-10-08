@@ -1,0 +1,72 @@
+
+> server@1.0.0 start
+> cross-env NODE_ENV=production node index
+
+{"level":30,"time":1727689790206,"pid":387572,"hostname":"adagen","msg":"Magic happening on port: 9000"}
+
+> server@1.0.0 start
+> cross-env NODE_ENV=production node index
+
+{"level":30,"time":1727690940686,"pid":387759,"hostname":"adagen","msg":"Magic happening on port: 9000"}
+[0mGET / [36m304[0m 4.247 ms - -[0m
+[0mGET /api/products/?page=1 [32m200[0m 69.019 ms - -[0m
+[0mGET /api/products/?page=1 [32m200[0m 3.045 ms - -[0m
+[0mGET /api/products/?page=1 [32m200[0m 18.635 ms - -[0m
+[0mGET /api/products/?page=1 [32m200[0m 16.286 ms - -[0m
+
+> server@1.0.0 dev
+> cross-env NODE_ENV=development && nodemon --legacy-watch
+
+[33m[nodemon] 3.1.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at errorOrDestroy (node:internal/streams/destroy:214:7)
+    at node:internal/fs/streams:260:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:677:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v18.20.4
+
+> server@1.0.0 start
+> cross-env NODE_ENV=production node index
+
+{"level":30,"time":1727776991691,"pid":395337,"hostname":"adagen","msg":"Magic happening on port: 9000"}
+npm error Missing script: "server"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+
+npm error A complete log of this run can be found in: /root/.npm/_logs/2024-10-01T11_23_13_883Z-debug-0.log
+npm error Missing script: "server"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+
+npm error A complete log of this run can be found in: /root/.npm/_logs/2024-10-04T06_59_49_607Z-debug-0.log
+npm error Missing script: "server"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+
+npm error A complete log of this run can be found in: /root/.npm/_logs/2024-10-04T07_00_17_160Z-debug-0.log
+npm error Missing script: "client"
+npm error
+npm error Did you mean this?
+npm error   npm run lint # run the "lint" package script
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+
+npm error A complete log of this run can be found in: /root/.npm/_logs/2024-10-04T07_07_12_192Z-debug-0.log

@@ -15,10 +15,10 @@ import "./index.css";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+// const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 root.render(
-  <GoogleOAuthProvider clientId={googleClientId}>
+  
     <HelmetProvider>
       <Windmill>
         <UserProvider>
@@ -37,5 +37,5 @@ root.render(
         </UserProvider>
       </Windmill>
     </HelmetProvider>
-  </GoogleOAuthProvider>
+  
 );

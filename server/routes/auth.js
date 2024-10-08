@@ -10,12 +10,8 @@ router.post("/signup", createAccount);
 
 router.post("/login", loginUser);
 
-
-
-
 // token for reset password
 router.post("/check-token", verifyResetToken);
-
 
 router.post("/refresh-token", refreshToken);
 
